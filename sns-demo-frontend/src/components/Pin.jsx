@@ -13,7 +13,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
   const [postHovered, setPostHovered] = useState(false)
   const user = fetchUser()
 
-  const alreadySaved = !!(save?.filter((item) => item.postedBy._id === user?.googleId))?.length
+  const alreadySaved = !!(save?.filter((item) => item?.postedBy?._id === user?.googleId))?.length
 
   const savePin = (id) => {
     if (!alreadySaved) {
@@ -125,7 +125,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
         }
       </div>
       <Link
-        to={`/user-profile/${postedBy._id}`}
+        to={`/user-profile/${postedBy?._id}`}
         className="flex gap-2 mt-2 items-center"
       >
         <img
