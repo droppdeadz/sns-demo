@@ -1,0 +1,17 @@
+# dependencies
+/sns-demo-backend/node_modules
+/sns-demo-frontend/node_modules
+
+# production
+/sns-demo-backend/build
+/sns-demo-frontend/build
+
+# misc
+.DS_Store
+
+/sns-demo-backend/npm-debug.log*
+/sns-demo-backend/yarn-debug.log*
+/sns-demo-backend/yarn-error.log*
+/sns-demo-frontend/npm-debug.log*
+/sns-demo-frontend/yarn-debug.log*
+/sns-demo-frontend/yarn-error.log*
